@@ -1,0 +1,484 @@
+//buttons----------------------------------------------
+.wrapButton{
+    text-align: center;
+}
+
+.button-270roundwSmall{
+    margin: 0 auto;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 7px 83px;
+    //width: 270px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 6px;
+    background: #91B63B;
+    border: 1px solid #7A7F43;
+    //@include transitionBase();
+    @include transitionBounce();
+    &:hover{
+        padding: 7px 93px;
+        //background: #1A2E14;
+        background: rgb(88, 114, 26);
+        border: 1px solid #7A7F43;
+        //color:#EFEEED;
+        color:#EFEEED;
+    }
+}
+.button-270roundw{
+    margin: 0 auto;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 7px 83px;
+    //width: 270px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 6px;
+    background: #91B63B;
+    border: 1px solid #7A7F43;
+    //@include transitionBase();
+    @include transitionBounce();
+    &:hover{
+        padding: 7px 93px;
+        //background: #1A2E14;
+        background: rgb(88, 114, 26);
+        border: 1px solid #7A7F43;
+        //color:#EFEEED;
+        color:#EFEEED;
+    }
+    @media screen AND (min-width: 768px)  {
+        padding: 9px 150px;
+        font-size: 15px;
+        @include transitionBounce();
+        &:hover{
+            padding: 9px 160px;
+        }
+    }
+}
+.button-270roundb{
+    margin: 0 auto;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 7px 83px;
+    //width: 270px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 6px;
+    background: #91B63B;
+    border: 1px solid #7A7F43;
+    //@include transitionBase();
+    @include transitionBounce();
+    &:hover{
+        padding: 7px 93px;
+        background: rgb(88, 114, 26);
+        border: 1px solid #7A7F43;
+        color:#EFEEED;
+    }
+    @media screen AND (min-width: 768px)  {
+        padding: 9px 150px;
+        font-size: 15px;
+        @include transitionBounce();
+        &:hover{
+            padding: 9px 160px;
+        }
+    }
+}
+.button-270roundbSmall{
+    margin: 0 auto;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 7px 60px;
+    //width: 270px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 6px;
+    background: #91B63B;
+    border: 1px solid #7A7F43;
+    //@include transitionBase();
+    @include transitionBounce();
+    &:hover{
+        background: rgb(88, 114, 26);
+        border: 1px solid #7A7F43;
+        color:#EFEEED;
+    }
+    @media screen AND (min-width: 768px)  {
+        padding: 9px 100px;
+        font-size: 15px;
+    }
+}
+.button-270square{
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    letter-spacing: 1px;
+    padding: 7px 0px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    background: #91B63B;
+    border: 1px solid #7A7F43;
+    cursor: pointer;
+    @include transitionBase();
+    &:hover{
+        background: rgb(88, 114, 26);
+        border: 1px solid #7A7F43;
+        color:#EFEEED;
+    }
+}
+.button-270half-articles{
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    letter-spacing: 1px;
+    padding: 7px 0px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 0 0 6px 6px;
+    background: #91B63B;
+    border: 1px solid #7A7F43;
+    @include transitionBase();
+    
+}
+.button-form{
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    letter-spacing: 1px;
+    padding: 7px 0px;
+    width: 270px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 3px;
+    background: #91B63B;
+    border: 1px solid #7A7F43;
+    cursor: pointer;
+    @include transitionBase();
+    &:hover{
+        background: rgb(88, 114, 26);
+        border: 1px solid #7A7F43;
+        color:#EFEEED;
+    }
+    @media screen AND (min-width: 768px){
+        padding: 9px 0px;
+        width: 450px;
+        font-size: 15px;
+    }
+    
+}
+
+//General-----------------------------------------------
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+//menu------------------------------------------------------
+
+.menu-txt{
+    font-size: 20px;
+    color:#EFEEED;
+    font-weight: 400;
+    text-transform: uppercase;
+    //transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    @include transitionBase();
+
+    &:hover{
+        font-size: 30px;
+        color:#91B63B;
+        font-weight: 600;    
+    }
+    @media screen AND (min-width: 768px){
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+            font-weight: 400;
+        }
+    }
+}
+
+
+//fonts--------------------------------------------
+ .home-titel1{
+    margin: 0;
+    font-size: 45px;
+    color:#EFEEED;
+    font-weight: 400;
+    padding-top: 60px;
+    line-height: 58px;
+    @media screen AND (min-width: 768px) AND (max-width: 1024px) {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    @media screen AND (min-width: 1024px)  {
+        font-size: 74px;
+        line-height: 95px;
+    }
+}
+.home-ondertitel1{
+    margin: 0;
+    font-size: 22px;
+    color:#EFEEED;
+    font-weight: 400;
+    padding-top: 20px;
+    @media screen AND (min-width: 768px) AND (max-width: 1024px) {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+}
+
+.page-titel1{
+    margin: 0;
+    font-size: 35px;
+    color:#EFEEED;
+    font-weight: 400;
+    //padding-top: 64px;
+    @media screen AND (min-width: 768px) AND (max-width: 1024px) {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    @media screen AND (min-width: 1024px)  {
+        font-size: 74px;
+        line-height: 95px;
+    }
+}
+
+.txt20w{
+    margin: 0;
+    font-size: 20px;
+    color:#EFEEED;
+    font-weight: 400;
+    line-height: 30px;
+    a{
+        text-decoration: none;
+        color:#91B63B;
+        @include transitionBase();
+        &:hover{
+            color:rgb(88, 114, 26);
+        }
+    }
+    
+}
+.txt20b{
+    margin: 0;
+    font-size: 20px;
+    color:#1A2E14;
+    font-weight: 400;
+    line-height: 30px;
+    a{
+        text-decoration: none;
+        color:#91B63B;
+        @include transitionBase();
+        &:hover{
+            color:rgb(88, 114, 26);
+        }
+    }
+
+}
+.txt-bold-20b{
+    margin: 0;
+    font-size: 20px;
+    color:#1A2E14;
+    font-weight: 600;
+    line-height: 30px;
+    a{
+        text-decoration: none;
+        color:#1A2E14;
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+        }
+    }
+}
+
+.txt-bold-20w{
+    margin: 0;
+    font-size: 20px;
+    color:#EFEEED;
+    font-weight: 600;
+    line-height: 30px;
+    a{
+        text-decoration: none;
+        color:#EFEEED;
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+        }
+    }
+}
+
+.form-txt20{
+    font-size: 20px;
+    color:#9D9D9D;
+    font-weight: 400;
+    line-height: 30px;
+}
+.txt17b{
+    margin: 0;
+    font-size: 17px;
+    color:#1A2E14;
+    font-weight: 400;
+    line-height: 22px;
+
+    a{
+        text-decoration: none;
+        color:#1A2E14;
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+        }
+    }
+}
+.txt17w{
+    margin: 0;
+    font-size: 17px;
+    color:#EFEEED;
+    font-weight: 400;
+    line-height: 22px;
+
+    a{
+        text-decoration: none;
+        color:#EFEEED;
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+        }
+    }
+}
+.txt-bold-17w{
+    margin: 0;
+    font-size: 17px;
+    color:#EFEEED;
+    font-weight: 600;
+    line-height: 22px;
+
+    a{
+        text-decoration: none;
+        color:#EFEEED;
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+        }
+    }
+}
+//------------------
+.subtit-bold-20g{
+    margin:0 0 40px;
+    font-size: 20px;
+    color:#7A7F43;
+    font-weight: 600;
+    line-height: 30px;
+    a{
+        text-decoration: none;
+        color:#7A7F43;
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+        }
+    }
+}
+.subscribe-bold-20g{
+    margin:0 0 40px;
+    font-size: 20px;
+    color:#7A7F43;
+    font-weight: 600;
+    line-height: 30px;
+    a{
+        text-decoration: none;
+        color:#7A7F43;
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+        }
+    }
+    @media screen AND (min-width: 768px) {
+        font-size: 25px;
+    }
+}
+.txt25w{
+    margin: 0;
+    font-size: 25px;
+    color:#EFEEED;
+    font-weight: 400;
+    line-height: 40px;
+    a{
+        text-decoration: none;
+        color:#EFEEED;
+        @include transitionBase();
+        &:hover{
+            color:#91B63B;
+        }
+    }
+}
+//---------------------
+.event-bold-22b{
+    margin: 0;
+    font-size: 22px;
+    color:#1A2E14;
+    font-weight: 700;
+    line-height: 40px;
+    @media screen AND (min-width: 768px) AND (max-width: 1024px){
+        font-size: 44px;
+    }
+    @media screen AND (min-width: 1280px){
+        font-size: 28px;
+    }
+}
+.event-date-bold-25b{
+    margin: 0;
+    font-size: 15px;
+    color:#1A2E14;
+    font-weight: 700;
+    line-height: 40px;
+    @media screen AND (min-width: 768px) AND (max-width: 1024px){
+        font-size: 20px;
+    }
+    @media screen AND (min-width: 1280px){
+        font-size: 18px;
+    }
+}
+//------------------
+.section-title30b{
+    margin: 0;
+    font-size: 30px;
+    color:#1A2E14;
+    font-weight: 400;
+    @media screen AND (min-width: 768px){
+        font-size: 60px;   
+    }
+}
+.section-title30w{
+    margin: 0;
+    font-size: 30px;
+    color:#EFEEED;
+    font-weight: 400;
+    @media screen AND (min-width: 768px){
+        font-size: 60px;   
+    }
+}
+
+.fa-heart{
+    font-size: 80%;
+}
+
+//alignment text---------------------------------------------
