@@ -19,11 +19,11 @@ section{
     margin: 0 50px;
     }
     @media screen AND (min-width: 768px) AND (max-width:1280px){
-        padding: 150px 0px 150px;
+        padding: 90px 0px 150px;
         margin: 0 50px;
     }
     @media screen AND (min-width: 1280px) {
-        padding: 200px 0px 200px;
+        padding: 100px 0px 150px;
         margin: 0 50px;
     }
     .sectiontitel{
@@ -284,8 +284,11 @@ section{
     }
     #wrapExtra-art{
         padding: 90px 0px 50px;
-        @media screen AND (min-width:768px) {
-            padding: 150px 0px 50px;
+        @media screen AND (min-width:768px)AND (max-width:1280px) {
+            padding: 90px 0px 50px;
+        }
+        @media screen AND (min-width: 1280px) {
+            padding: 100px 0px 50px;
         }
     }
     .sectionWrap{
@@ -584,56 +587,143 @@ section{
         left:0;
         width:100%;
         display: flex;
-        //background: rgba(26, 46, 20, 0.452);
         justify-content: space-between;
+        @media screen AND (min-width: 1024px){
+            top: 12px; 
+        }
         .nextEvent{
             width: 170px;
             font-family: 'Encode Sans Semi Expanded', sans-serif;
             letter-spacing: 1px;
             text-decoration: none;
-            font-size: 13px;
+            font-size: 18px;
             padding:3px 10px;
             color:rgba(239, 238, 237, 0);
             font-weight: 400;
-            @media screen AND (min-width: 768px){
-                font-size: 16px;
-                width: 250px;
-            }
+            @include transitionBase();
+            
             a{
                 text-decoration: none;
                 color:rgba(239, 238, 237, 0);
+                @media screen AND (min-width: 1024px){
+                    color:#91B63B;
+                }
+                @include transitionBase();
                 sup{
-                    top:-5px;
-                    @media screen AND (min-width: 768px){
-                        top:-9px;
-                    }
+                    top:-10px;
+                    @include transitionBase();
                 }
                 i{
                     color:#91B63B;
-                    font-size: 20px;
+                    font-size: 25px;
                     @include transitionBase();
-                    @media screen AND (min-width: 768px){
+                }
+            }
+
+            // responsive
+            @media screen AND (min-width: 640px) AND (max-width:768px){
+                font-size: 20px;
+                width: 250px;
+                padding:3px 10px;
+                a{
+                    sup{
+                        top:-11px;
+                    }
+                    i{
                         font-size: 30px;
                     }
                 }
             }
-            
-            @include transitionBase();
-            &:hover{
+            @media screen AND (min-width: 768px) AND (max-width:1024px){
+                font-size: 25px;
+                width: 350px;
+                padding:3px 10px;
+                a{
+                    sup{
+                        top:-12px;
+                    }
+                    i{
+                        font-size: 35px;
+                    }
+                }
+            }
+            @media screen AND (min-width: 1024px) AND (max-width:1280px){
+                font-size: 18px;
+                padding:3px 17px;
+                width: 350px;
+                a{
+                    sup{
+                        top:-6px;
+                    }
+                    i{
+                        font-size: 25px;
+                    }
+                }
+            }
+            @media screen AND (min-width: 1280px){
                 font-size: 20px;
+                padding:3px 17px;
+                width: 350px;
+                a{
+                    sup{
+                        top:-10px;
+                    }
+                    i{
+                        font-size: 35px;
+                    }
+                }
+            }
+            // hover
+            &:hover{
+                font-size: 18px;
                 color:#EFEEED;
                 a{
                     text-decoration: none;
                     color:#EFEEED;
                     i{
                         color:#EFEEED;
-                        font-size: 25px;
-                        @media screen AND (min-width: 768px){
+                        font-size: 35px;
+                    }
+                }
+
+                @media screen AND (min-width: 640px) AND (max-width:768px){
+                    font-size: 20px;
+                    a{
+                        i{
+                            font-size: 40px;
+                        }
+                    }
+                }
+                @media screen AND (min-width: 768px) AND (max-width:1024px){
+                    font-size: 25px;
+                    a{
+                        i{
+                            font-size: 45px;
+                        }
+                    }
+                }
+                @media screen AND (min-width: 1024px) AND (max-width: 1280px){
+                    font-size: 20px;
+                    a{
+                        sup{
+                            top:-10px;
+                        }
+                        i{
                             font-size: 35px;
                         }
                     }
                 }
-                
+                @media screen AND (min-width: 1280px){
+                    font-size: 22px;
+                    a{
+                        sup{
+                            top:-10px;
+                        }
+                        i{
+                            font-size: 40px;
+                        }
+                    }
+                }
             }
         }
         .pervious{
@@ -651,7 +741,7 @@ section{
                 margin: 0 auto;
                 @media screen AND (min-width: 768px){
                     width: 248px;
-                    margin: -80px auto 0;
+                    margin: -10px auto 0;
                 }
                 .red{
                     width: 180px;
