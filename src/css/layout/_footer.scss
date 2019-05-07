@@ -1,18 +1,58 @@
+.footerWrap{
+    padding: 90px 0px 50px;
+    margin: 0 10px;
+    @media screen AND (min-width: 360px) AND (max-width:480px){
+    padding: 90px 0px 130px;
+    margin: 0 30px;
+    }
+    @media screen AND (min-width: 480px) AND (max-width:768px){
+    padding: 90px 0px 130px;
+    margin: 0 50px;
+    }
+    @media screen AND (min-width: 768px) AND (max-width:1280px){
+        padding: 150px 0px 150px;
+        margin: 0 50px;
+    }
+    @media screen AND (min-width: 1280px) {
+        padding: 200px 0px 200px;
+        margin: 0 50px;
+    }
+    .footertitel{
+        text-align: center;
+        .header-line{
+            margin:0 auto;
+            width: 270px;
+            height: 32px;
+            border-bottom: 1px solid #B5AA61;
+            @media screen AND (min-width: 768px){
+                width: 560px;
+            }
+        }
+    }
+}
 .backgroundColor{
     background: #1A2E14;
     padding-bottom: 30px;
     #wrapExtra{
+        padding: 80px 0 0;
+        @media screen AND (min-width: 630px){
         padding: 90px 0px 20px;
+        }
     }
     .footerWrap{
         //padding: 90px 0px 100px;
         .sectionbody{
             text-align: center;
             margin: 0 auto 0;
-            padding: 60px 0 60px;
+            padding: 40px 0 20px;
             width: 270px;
+            @media screen AND (min-width: 360px) AND (max-width:768px){
+                padding: 60px 0 40px; 
+                width: 270px;
+            }
             @media screen AND (min-width: 768px){
                 width: 450px;
+                padding: 60px 0 60px;
             }
             .formWrap{
                 margin: 40px 0;
@@ -62,6 +102,9 @@
     justify-content: center;
     margin-top: 60px;
     width: 100%;
+    @media screen AND (max-width: 360px){
+        margin-top: 25px;
+    }
     .social{
         padding:0 1%;
         .fb-ico , .insta-ico{

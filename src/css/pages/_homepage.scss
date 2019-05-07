@@ -7,16 +7,26 @@ section{
 }
 
 //section - general and titel - general
-.sectionWrap, .footerWrap{
+.sectionWrap{
+    padding: 90px 0px 130px;
+    margin: 0 10px;
+    @media screen AND (min-width: 360px) AND (max-width:480px){
+    padding: 90px 0px 130px;
+    margin: 0 30px;
+    }
+    @media screen AND (min-width: 480px) AND (max-width:768px){
     padding: 90px 0px 130px;
     margin: 0 50px;
+    }
     @media screen AND (min-width: 768px) AND (max-width:1280px){
         padding: 150px 0px 150px;
+        margin: 0 50px;
     }
     @media screen AND (min-width: 1280px) {
         padding: 200px 0px 200px;
+        margin: 0 50px;
     }
-    .sectiontitel, .footertitel{
+    .sectiontitel{
         text-align: center;
         .header-line{
             margin:0 auto;
@@ -325,13 +335,12 @@ section{
                             @include transitionBase();
                             
                             @media screen AND (max-width:446px) {
-                                margin: 0 -48px;
-                                border-radius: 0;
                                 height: 138px;
+                                margin: 0 0 0;
                             }
 
                             .art-img{
-                                width: 105%;
+                                width: 100%;
                                 display: block;
 
                             }
@@ -340,9 +349,10 @@ section{
                             width: 217px;
                             margin: 0 auto;
                             padding: 0 0 40px;
-                            height: 295px;
+                            height: 325px;
                             @media screen AND (max-width:446px) {
                                 padding: 40px 0;
+                                height: 325px;
                             }
 
                             h1{
@@ -450,17 +460,17 @@ section{
                                 width: 192px;
                                 height: 69px;
                                 background: rgba(239, 238, 237, 0.705);
-                                @media screen AND (min-width: 768px) AND (max-width: 1024px) {
+                                @media screen AND (min-width: 768px) AND (max-width: 1025px) {
                                     width: 400px;
                                     height: 145px;
                                 }
-                                @media screen AND (min-width: 1024px) {
+                                @media screen AND (min-width: 1025px) {
                                     width: 240px;
                                     height: 80px;
                                 }
                                 .event-title{
                                     @include overlay($top : 10px);
-                                    @media screen AND (min-width: 768px) AND (max-width: 1024px) {
+                                    @media screen AND (min-width: 768px) AND (max-width: 1025px) {
                                         @include overlay($top : 41px);
                                     }
                                 }
@@ -470,11 +480,11 @@ section{
                                     right: -51px;
                                     width: 100%;
                                     height: 100%;
-                                    @media screen AND (min-width: 768px) AND (max-width: 1024px){
+                                    @media screen AND (min-width: 768px) AND (max-width: 1025px){
                                         top: 100px;
                                         right: -130px;
                                     }
-                                    @media screen AND (min-width: 1024px) {
+                                    @media screen AND (min-width: 1025px) {
                                         top:39px;
                                     }
                                 }
@@ -817,18 +827,20 @@ section{
                             margin: 0 0 40px;
                             @include transitionBase();
                             @media screen AND (max-width:446px) {
-                                margin: 0 -48px;
-                                border-radius: 0;
                                 height: 138px;
+                                margin: 0 0 0;
                             }
                             @media screen AND (min-width:768px) AND (max-width:1024px) {
                                 height: 162px;
+                                margin: 0 0 40px;
                             }
                             @media screen AND (min-width:1024px) AND (max-width:1280px) {
                                 height: 250px;
+                                margin: 0 0 40px;
                             }
                             @media screen AND (min-width:1280px) {
                                 height: 250px;
+                                margin: 0 0 40px;
                             }
                             .article-img{
                                 width: 105%;
