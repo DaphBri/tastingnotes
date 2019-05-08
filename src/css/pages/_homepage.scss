@@ -839,12 +839,13 @@ section{
                     top:95px;
                     right:0px;
                     height: 44px;
-                    width:80px;
+                    //width:80px;
+                    width:101px;
                     padding: 8px 0;
                     border-radius: 10px 0 0 10px;
                     border:1px solid #7A7F43;
                     background: #91B63B;
-                    @include transitionBase();
+                    //@include transitionBase();
                     &:hover{
                         width:101px;
                     }
@@ -970,12 +971,8 @@ section{
                                 @media screen AND (min-width:768px) AND (max-width:1024px) {
                                     width: 400px;
                                 }
-                                @media screen AND (min-width:1024px) AND (max-width:1280px) {
+                                @media screen AND (min-width:1024px)  {
                                     width: 580px;
-                                }
-                                @media screen AND (min-width:1280px) {
-                                    width: 455px;
-                                    margin: 0 20px;
                                 }
                                 .art-titel{
                                     margin: 0 0 30px;
@@ -989,17 +986,36 @@ section{
                                     } 
                                 }
 
+                                .imgBoxArt{
+                                    width: 250px;
+                                    height: 150px;
+                                    overflow: hidden;
+                                    margin: 20px 0 20px;
+                                    @media screen AND (min-width:768px) AND (max-width:1024px) {
+                                        width: 400px;
+                                        height: 220px;
+                                        margin: 30px 0 30px;
+                                    }
+                                    @media screen AND (min-width:1024px)  {
+                                        width: 580px;
+                                        height: 340px;
+                                        margin: 30px 0 30px;
+                                    }
+
+                                    .article-image{
+                                        width:100%;
+                                    }
+                                }
+
+
                             // slider!!
                                 .sliderbox{
                                     margin: 40px -25px 0;
                                     @media screen AND (min-width:768px) AND (max-width:1024px) {
                                         margin: 40px -25px 0;
                                     }
-                                    @media screen AND (min-width:1024px) AND (max-width:1280px) {
+                                    @media screen AND (min-width:1024px)  {
                                         margin: 40px -60px 0;
-                                    }
-                                    @media screen AND (min-width:1280px){
-                                        margin: 40px 3px 0;
                                     }
                                     .overflowSlider{
                                         width: 300px;
@@ -1010,13 +1026,9 @@ section{
                                             width: 450px;
                                             height:300px;
                                         }
-                                        @media screen AND (min-width:1024px) AND (max-width:1280px) {
+                                        @media screen AND (min-width:1024px)  {
                                             width: 700px;
                                             height:485px;
-                                        }
-                                        @media screen AND (min-width:1280px){
-                                            width: 450px;
-                                            height:300px;
                                         }
                                         .flexSliderWrap{
                                             display: flex;
@@ -1025,24 +1037,20 @@ section{
                                                 @media screen AND (min-width:768px) AND (max-width:1024px) {
                                                     width: 450px;
                                                 }
-                                                @media screen AND (min-width:1024px) AND (max-width:1280px) {
+                                                @media screen AND (min-width:1024px)  {
                                                     width: 700px;
                                                 }
-                                                @media screen AND (min-width:1280px){
-                                                    width: 450px;
-                                                }
+
                                                 .image{
                                                     width:300px;
                                                     display:block;
                                                     @media screen AND (min-width:768px) AND (max-width:1024px) {
                                                         width: 450px;
                                                     }
-                                                    @media screen AND (min-width:1024px) AND (max-width:1280px) {
+                                                    @media screen AND (min-width:1024px) {
                                                         width: 700px;
                                                     }
-                                                    @media screen AND (min-width:1280px){
-                                                        width: 450px;
-                                                    }
+
                                                 }
                                             }
                                         }
