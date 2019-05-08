@@ -2,19 +2,19 @@
     padding: 90px 0px 50px;
     margin: 0 10px;
     @media screen AND (min-width: 360px) AND (max-width:480px){
-    padding: 90px 0px 130px;
+    padding: 90px 0px 60px;
     margin: 0 30px;
     }
     @media screen AND (min-width: 480px) AND (max-width:768px){
-    padding: 90px 0px 130px;
+    padding: 90px 0px 60px;
     margin: 0 50px;
     }
     @media screen AND (min-width: 768px) AND (max-width:1280px){
-        padding: 150px 0px 150px;
+        padding: 100px 0px 90px;
         margin: 0 50px;
     }
     @media screen AND (min-width: 1280px) {
-        padding: 200px 0px 200px;
+        padding: 100px 0px 90px;
         margin: 0 50px;
     }
     .footertitel{
@@ -32,7 +32,7 @@
 }
 .backgroundColor{
     background: #1A2E14;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     #wrapExtra{
         padding: 80px 0 0;
         @media screen AND (min-width: 630px){
@@ -47,12 +47,12 @@
             padding: 40px 0 20px;
             width: 270px;
             @media screen AND (min-width: 360px) AND (max-width:768px){
-                padding: 60px 0 40px; 
+                padding: 40px 0 30px; 
                 width: 270px;
             }
             @media screen AND (min-width: 768px){
                 width: 450px;
-                padding: 60px 0 60px;
+                padding: 40px 0 30px;
             }
             .formWrap{
                 margin: 40px 0;
@@ -81,6 +81,7 @@
         position: relative;
         width: 180px;
         margin: 0 auto;
+        
         .red{
             width: 180px;
         }
@@ -93,6 +94,15 @@
             @include transitionBase();
             &:hover{
                 opacity: 0;
+            }
+        }
+        @media screen AND (min-width: 768px){
+            width: 200px;
+            .red{
+                width: 200px;
+            }
+            .white{
+                width: 200px;
             }
         }
     }

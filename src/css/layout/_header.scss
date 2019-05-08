@@ -33,6 +33,18 @@ body{
                 &:hover{
                     color:#EFEEED;
                 }
+                @media screen AND (min-width: 768px) AND (max-width:1280px){
+                    width: 40px;
+                    height:40px;
+                    border-radius: 20px;
+                    font-size: 2em;
+                }
+                @media screen AND (min-width: 1280px){
+                    width: 50px;
+                    height:50px;
+                    border-radius: 25px;
+                    font-size: 2.5em;
+                }
             }
         }
     }
